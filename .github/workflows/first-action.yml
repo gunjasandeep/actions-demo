@@ -5,6 +5,6 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - name: test
-        run: echo"testing all files"
+        run: echo "testing all files"
       - name: build
-        run: echo"build the code"
+        run: echo "build the code"
