@@ -2,7 +2,7 @@ name: first-workflo
 on: workflow_dispatch
 jobs:
   job1:
-  runs-on: ubuntu-latest
+  runs-on: [ubuntu-latest]
   steps:
     - name: test
       run: echo"testing all files"
