@@ -1,5 +1,5 @@
 name: first-workflo
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 jobs:
   job1:
     runs-on: [ubuntu-latest]
@@ -7,7 +7,7 @@ jobs:
       - name: test
         run: echo "testing all files"
       - name: build
-        run: .in echo "build the code"
+        run: echo "build the code"
   job2:
     needs: job1
     runs-on: ubuntu-latest
